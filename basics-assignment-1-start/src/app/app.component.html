@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ol>
+        <li>Create two new Components (manually or with CLI): WarningAlert and SuccessAlert</li>
+        <li>Output them beneath each other in the AppComponent</li>
+        <li>Output a warning or success message in the Components</li>
+        <li>Style the Components appropriately (maybe some red/ green text?)</li>
+      </ol>
+      <p>Use external or internal templates and styles!</p>
+      <p>Feel free to create more components, nest them into each other or play around with different types of selectors!</p>
+    </div>
+  </div>
+</div>
+
+<input type="radio" name="esito" (click)="esito=0" >
+<input type="radio" name="esito" (click)="esito=1" >
+
+<app-warning-alert *ngIf="esito==0"></app-warning-alert>
+<app-success-alert *ngIf="esito==1"></app-success-alert>
