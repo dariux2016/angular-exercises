@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-	toggleDetails = false : boolean;
-	buttonText = 'Display details' : string;
-	logArray = {} : number[];
-	clickNumber = 0 : number;
+	toggleDetails : boolean = false;
+	buttonText : string = 'Display details';
+	logArray : number[] = [];
+	clickNumber : number = 0;
 
 	onToggleDetails(){
 		this.toggleDetails = !this.toggleDetails;
@@ -20,6 +20,6 @@ export class AppComponent {
 		}
 
 		this.clickNumber++;
-		logArray.push(this.clickNumber);
+		this.logArray.push(this.clickNumber);
 	}
 }
